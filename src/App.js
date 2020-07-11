@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          AGBAYE24
+          <b>AGBAYE24</b>
         </p>
       </header>
     </div>
