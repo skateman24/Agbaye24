@@ -1,5 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation';
+import {connect} from 'react-redux'
+
 
 class HomePage extends React.Component {
     render() {
@@ -9,9 +11,26 @@ class HomePage extends React.Component {
                     <h1>HomePage sample</h1>
                     <p>HomePage page body content</p>
                 </div>
+                {this.props.userdetails.name}
             </div>
         );
     }
 }
 
-export default HomePage;
+
+
+const mapStateToProps = state => {
+    return{
+        userdetails : state.UserDetails.userdetails,
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return{
+        
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
+
+
