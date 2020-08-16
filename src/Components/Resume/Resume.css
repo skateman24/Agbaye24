@@ -1,0 +1,9 @@
+.bgclass{
+    background-color: brown;
+    padding:11px;
+    border:2px solid green;
+}
+.container{
+    width:100%;
+    padding: 10px;
+}
