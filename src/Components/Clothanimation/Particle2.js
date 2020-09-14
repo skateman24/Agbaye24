@@ -13,7 +13,7 @@ class Particle2 extends React.Component {
                         <p>I awake and smile, for my dreams have come true.</p>
                     </div>
                     <div>
-                        <p style={{float:"right"}}>- By ----</p>
+                        <p style={{float:"right"}}>- By V---</p>
                     </div>
                     
                 </div>
