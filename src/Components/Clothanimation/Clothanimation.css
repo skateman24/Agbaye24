@@ -1,0 +1,104 @@
+#mainWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  /*width:350px;*/
+}
+
+#cardsWrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  
+}
+
+.card{
+  width: 300px;
+  height: 175px;
+  perspective: 500px;
+  position: relative;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(30deg);
+}
+
+.image.first{
+  background-image: url("https://c1.staticflickr.com/1/343/31652757460_b2b5794a51_n.jpg");
+}
+
+.image.second{
+  background-image: url("https://c2.staticflickr.com/2/1506/25121644830_2d768ef51a_n.jpg");
+}
+
+.screen{
+  background-color: rgba(0, 0, 0, 0.22);
+  width: 100%;
+  height: 100%;
+  transform: translateZ(30px) scale(0.940);
+}
+
+.text{
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  color: white;
+  transform: translateZ(30px) scale(0.940);
+}
+
+.text p{
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+.text p:first-of-type{
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.text p:last-of-type{
+    font-size: 1em;
+}
+
+/* Image animation 2*/
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    #666,
+    #222
+  );
+}
+
+.module-jamf {
+  width: 300px;
+  border: 1px solid white;
+}
+
+.jamf-container {
+  display: block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.jamf-mover {
+  width: 300px;
+  height: 300px;
+  background: url(https://images.unsplash.com/photo-1499162526249-f5b8b9ba9923?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=865bf5c0b77ceb22e88de9fd41c5a671);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: -30px 40px;
+  transform: scale(1);
+  transition: background-position 0.25s;
+
+
+}
